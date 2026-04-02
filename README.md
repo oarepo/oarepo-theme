@@ -14,7 +14,7 @@ pip install oarepo-theme
 
 ### Requirements
 
-- Python 3.13+
+- Python 3.14+
 - InvenioRDM v14.x
 - OARepo v14.x
 
