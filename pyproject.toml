@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "oarepo-theme"
-version = "4.0.0"
+version = "5.0.0"
 description = 'SemanticUI Invenio app theme overlay for NRP repositories'
 readme = "README.md"
 requires-python = ">=3.14,<3.15"
@@ -30,7 +30,7 @@ dependencies = [
 
 [project.optional-dependencies]
 tests = [
-    "oarepo-runtime>=5.0.0,<6.0.0",
+    "oarepo-runtime>=6.0.0,<7.0.0",
 
     # invenio dependencies
     "invenio-app>=3.0.0,<4.0.0",
