@@ -62,7 +62,8 @@ Sample output:
 @import (optional, multiple) "themes/rdm/@{type}s/@{element}.variables";
 
 /* Theme variables for a packaged library component  */
-/* TODO: implement some autoregistration mechanism like with LESS components, e.g. oarepo less variables */ 
+/* TODO(EP-331): implement some autoregistration mechanism like with LESS components, e.g. oarepo less variables
+   https://linear.app/ducesnet/issue/EP-331/autoregistration-of-oarepo-package-less-variables-in-themeless */
 @import (optional, multiple) "@less/oarepo_ui/themes/@{theme}/@{type}s/@{element}.variables";
 @import (optional, multiple) "@less/oarepo_vocabularies_ui/themes/@{theme}/@{type}s/@{element}.variables";
 @import (optional, multiple) "@less/oarepo_communities/themes/@{theme}/@{type}s/@{element}.variables";
@@ -103,7 +104,8 @@ Sample output:
   @import (optional, multiple) "themes/invenio/@{type}s/@{element}.overrides";
   @import (optional, multiple) 'themes/rdm/@{type}s/@{element}.overrides';
 
-  /* TODO: implement some autoregistration mechanism like with LESS components, e.g. oarepo less overrides */
+  /* TODO(EP-332): implement some autoregistration mechanism like with LESS components, e.g. oarepo less overrides
+     https://linear.app/ducesnet/issue/EP-332/autoregistration-of-oarepo-package-less-overrides-in-loaduioverrides */
   @import (optional, multiple) "@less/oarepo_ui/themes/@{theme}/@{type}s/@{element}.overrides";
   @import (optional, multiple) "@less/oarepo_vocabularies_ui/themes/@{theme}/@{type}s/@{element}.overrides";
   @import (optional, multiple) "@less/oarepo_communities/themes/@{theme}/@{type}s/@{element}.overrides";
