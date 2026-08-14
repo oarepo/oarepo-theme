@@ -71,9 +71,7 @@ Loading order (from lowest to highest priority):
 
 - [`oarepo_ui`](https://github.com/oarepo/oarepo-ui) - Core UI components
 - [`oarepo_vocabularies_ui`](https://github.com/oarepo/oarepo-vocabularies) - Vocabulary management UI
-- [`oarepo_dashboard`](https://github.com/oarepo/oarepo-dashboard) - Dashboard components
 - [`oarepo_communities`](https://github.com/oarepo/oarepo-communities) - Community features
-- [`oarepo_requests_ui`](https://github.com/oarepo/oarepo-requests) - Request workflow UI
 
 Each package can provide:
 
