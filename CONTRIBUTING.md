@@ -85,8 +85,7 @@ development.
    ```
 
    The linter checks code style ([ruff](https://docs.astral.sh/ruff/)),
-   type annotations (mypy, pyright), license headers, and docstring
-   conventions.
+   type annotations, license headers, and docstring conventions.
 
 6. Commit your changes and push your branch to GitHub:
 
@@ -105,12 +104,10 @@ Before you submit a pull request, check that it meets these guidelines:
 1. The pull request should include tests and must not decrease test coverage.
 2. If the pull request adds functionality, the docs should be updated. Put
    your new functionality into a function with a docstring.
-3. All Python modules must contain the MIT license header
-   (`Copyright (c) ... CESNET z.s.p.o.`) and
-   `from __future__ import annotations`.
-4. Code must be formatted with ruff (`./run.sh format`) and pass
-   `./run.sh lint`.
-5. The pull request should work for all supported Python and OARepo versions.
+3. Code must be formatted with ruff (`./run.sh format`) and pass
+   `./run.sh lint` (ruff, SPDX license headers,
+   `from __future__ import annotations`, and type checking).
+4. The pull request should work for all supported Python and OARepo versions.
    Check the CI runs on your pull request and make sure that the tests pass.
 
 ## License

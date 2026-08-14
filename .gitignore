@@ -356,10 +356,14 @@ vite.config.ts.timestamp-*
 # OARepo specific gitignore
 #
 .runner.sh
+.tools/
 .env-services
 .eslintrc.yaml
 .mypy.ini
 .ruff.toml
+ty.toml
+.hypothesis/
+coverage.xml
 
 #
 # Editors
@@ -382,4 +386,5 @@ vite.config.ts.timestamp-*
 #
 package-lock.json
 pnpm-lock.yaml
-.invenio.private
+.invenio.privatejunit.xml
+htmlcov/
