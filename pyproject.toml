@@ -16,7 +16,6 @@ authors = [
 classifiers = [
   "Development Status :: 4 - Beta",
   "Programming Language :: Python",
-  "Programming Language :: Python :: 3.13",
   "Programming Language :: Python :: 3.14",
   "Programming Language :: Python :: Implementation :: CPython",
 ]
@@ -29,6 +28,10 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
+dev = [
+    "pytest>=7.1.2",
+    "oarepo-invenio-typing-stubs",
+]
 tests = [
     "oarepo-runtime>=7.0.0,<8.0.0",
 
@@ -46,13 +49,6 @@ Issues = "https://github.com/oarepo/oarepo-theme/issues"
 Source = "https://github.com/oarepo/oarepo-theme"
 Homepage = "https://github.com/oarepo/oarepo-theme"
 
-
-[tool.hatch.envs.types]
-extra-dependencies = [
-  "mypy>=1.0.0",
-]
-[tool.hatch.envs.types.scripts]
-check = "mypy --install-types --non-interactive {args:oarepo_theme tests}"
 
 [tool.coverage.run]
 source_pkgs = ["oarepo_theme", "tests"]
@@ -86,3 +82,6 @@ oarepo_theme = "oarepo_theme.webpack:theme"
 include = [
     "/oarepo_theme",
 ]
+
+[tool.oarepo-cli.license]
+organization = "CESNET z.s.p.o."
